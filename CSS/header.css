@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+link[type="image/png"] {
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding: 0;
+    margin : auto;
+    max-width: 300px;
+}
+header img {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    object-fit: cover;
+    padding: 15px;
+}
+main {
+    align-items: center;
+    border: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
