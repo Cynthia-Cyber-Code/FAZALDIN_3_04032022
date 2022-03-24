@@ -2,32 +2,48 @@ body{
     margin: 0;
     padding: 0;
 }
-link[type="image/png"] {
-    object-fit: cover;
-}
 a {
     text-decoration: none;
     color: black;
 }
 header {
     display: flex;
-    justify-content: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin : auto;
-    max-width: 700px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 768px;
 }
 header img {
-    display: block;
+    object-fit: cover;
     margin: auto;
     max-width: 200px;
-    object-fit: cover;
     padding: 15px;
+}
+main h3, h4 {
+    font-family: 'Shrikhand';
+    font-weight: bold;
+}
+main p {
+    font-family: 'Roboto';
+    opacity: 0.7;
 }
 main {
     align-items: center;
     border: none;
-    max-width: 700px;
-    margin: auto;
+    /* margin: auto; */
     padding: 0;
+}
+@media screen and (min-width: 992px) {
+    header, main, footer {
+        max-width: 1360px;
+        margin: auto;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header, main, footer {
+        max-width: 992px;
+        margin: auto;
+    }
 }

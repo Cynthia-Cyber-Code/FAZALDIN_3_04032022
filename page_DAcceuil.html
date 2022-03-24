@@ -6,6 +6,7 @@
         <meta charset="utf-8">
 
         <link rel="icon" href="images/logo/ohmyfood.png" sizes="1x1" type="image/png"/>
+
         <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/page_DAcceuil.css">
         <link rel="stylesheet" href="CSS/footer.css">
@@ -13,6 +14,7 @@
         <script src="https://kit.fontawesome.com/eeac26ae02.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     <header>
         <img src="images/logo/ohmyfood.png" alt="Logo">
     </header> 
@@ -54,13 +56,20 @@
             <article class="card" id="Picture_1">
                 <a href="..\P3_OhMyFood\la_Palette_Du_Gout.html">
                         <span class="new">Nouveau</span>
-                        <div class="image">
+                        <div class="image_new">
 
                         </div>
                         <!-- <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo_restaurant"> -->
                     <div>
                         <h4>La Palette du goûts</h4>
-                        <p class="click_favoris"><i class="fa-solid fa-heart"></i></p>
+                        <div>
+                            <input type="checkbox" id="o" >
+                            <label for="o">
+                                <span class="no_click"><i class="fa-solid fa-heart"></i></span>
+                                <span class="click"><i class="fa-solid fa-heart"></i></span>
+                            </label>
+                        </div>
+                        <!-- <p class="click_favoris"><i class="fa-solid fa-heart"></i></p> -->
                     </div>
                     <div>
                         <p>Ménilmontant</p>
@@ -70,7 +79,7 @@
             <article class="card" id="Picture_2">
                 <a href="..\P3_OhMyFood\la_Note_Enchantee.html">
                     <span class="new">Nouveau</span>
-                    <div class="image">
+                    <div class="image_new">
 
                     </div>
                     <!-- <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo_restaurant"> -->
@@ -140,8 +149,17 @@
         <div>
             <p>Mentions légales</p>
         </div>
-        <div>
-            <p>Contact</p>
+        <div class="contact">
+            <a class="mail" href="#popup1"><p>Contact</p></a>
+        </div>
+        
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">
+                    <p><i class="fa-solid fa-square-xmark"></i></p>
+                </a>
+                <p>E-mail</p>
+            </div>
         </div>
     </footer>    
     </body>
