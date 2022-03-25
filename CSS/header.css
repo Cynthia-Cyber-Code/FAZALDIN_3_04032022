@@ -31,7 +31,6 @@ main p {
 main {
     align-items: center;
     border: none;
-    /* margin: auto; */
     padding: 0;
 }
 @media screen and (min-width: 992px) {
