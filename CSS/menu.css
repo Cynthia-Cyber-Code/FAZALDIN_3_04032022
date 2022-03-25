@@ -47,28 +47,33 @@ main h4, main p {
 }
 .click_favoris i {
     color: gray;
-    object-fit: cover;
+    font-weight: lighter;
 }
-.click_favoris i:hover {
+
+.click_favoris:hover .fa-heart {
     display: block;
     border: none;
     animation-duration: 2s;
-    animation-direction: alternate;
+    /* animation-direction: alternate; */
     animation-fill-mode: forwards;
     animation-name: slideHearth;
 }
 .fa-heart {
+    color: gray;
     overflow: hidden;
 }
 @keyframes slideHearth {
     from {
         width: 0;
+        font-weight: bold;
     }
     to {
         width: 100%;
-        color: #9356DC;
+        font-weight: bold;
+        background: linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
 }
 section.card div {
     margin: auto;
@@ -79,6 +84,20 @@ section.card div {
 /* entrée/plats/desserts */
 main h3 {
     padding: 10px;
+}
+article {
+    animation-duration: 3s;
+    animation-name: progresive_text;
+}
+@keyframes progresive_text {
+    from {
+        opacity: 0;
+        margin-bottom: 25px;
+    }
+    to {
+        margin-bottom: 0;
+        opacity: 1;
+    }
 }
 article {
     background-color: white;
@@ -106,7 +125,7 @@ article div.aligment {
     white-space: nowrap;
     overflow: hidden;
 }
-.espacement p {
+.article {
     overflow-wrap: break-word;
     text-overflow: ellipsis; 
 }
@@ -120,10 +139,10 @@ article:hover .comand {
     animation-direction: alternate;
     animation-fill-mode: forwards;
     /* animation-iteration-count: 2; */
-    animation-name: slidein;
+    animation-name: slide_Heart;
 }
 
-@keyframes slidein {
+@keyframes slide_Heart {
     from {
         width: 0;
         padding-top: 20px;
@@ -137,11 +156,11 @@ article:hover .comand {
         padding-bottom: 25px;
     }
 }
-
 main a {
     display: flex;
     justify-content: center;
-    max-width: 700px;
+    align-items: center;
+    max-width: 1340px;
     padding: 25px;
 }
 
@@ -152,9 +171,7 @@ button {
     border: none;
     background: linear-gradient(#FF79DA, #9356DC);
 }
-/* animation-timing-function: ease-in-out; */
-/* animation-timing-function: ease;
-    animation-fill-mode: none;*/
+
 @media screen and (min-width: 992px) {
     .name {
         display: flex;
