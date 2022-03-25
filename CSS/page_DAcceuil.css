@@ -28,7 +28,7 @@ a {
     height: 1340px;
     background: white;
     animation-delay: 1s;
-    animation: load 5s;
+    animation: load 3s;
     animation-fill-mode: forwards;
 }
 .loader {
@@ -242,25 +242,48 @@ button {
 input[type="checkbox"] {
     display: none
 }
-.fa-heart{
+/* .fa-heart{
     overflow: hidden;
     border: none;
 }
 .click .fa-heart {
-    background: linear-gradient(#FF79DA,#9356DC);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#9356DC, #FF79DA);
     border: none;
-}
+} */
 .no_click i {
     color: gray;
+    font-weight: lighter;
+}
+.no_click:hover .fa-heart {
+    display: block;
+    border: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: slideHearth;
+}
+.fa-heart {
+    color: gray;
+    overflow: hidden;
+}
+@keyframes slideHearth {
+    from {
+        width: 0;
+        font-weight: bold;
+    }
+    to {
+        width: 100%;
+        font-weight: bold;
+        background: linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-label > * {
+/* label > * {
     position: absolute;
     transition: opacity 3s ease;
-}
-input + label > :last-child {
+} */
+/* input + label > :last-child {
     opacity: 0;
 }
 input:checked + label > :first-child {
@@ -268,7 +291,7 @@ input:checked + label > :first-child {
 }
 input:checked + label > :last-child {
     opacity: 1;
-}
+} */
 
 @media screen and (min-width: 992px) {
     .intro {
