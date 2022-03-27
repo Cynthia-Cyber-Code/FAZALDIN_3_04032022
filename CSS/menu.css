@@ -137,10 +137,10 @@ article:hover .comand {
     animation-direction: alternate;
     animation-fill-mode: forwards;
     /* animation-iteration-count: 2; */
-    animation-name: slide_Heart;
+    animation-name: slide_Check;
 }
 
-@keyframes slide_Heart {
+@keyframes slide_Check {
     from {
         width: 0;
         padding-top: 20px;
@@ -152,6 +152,23 @@ article:hover .comand {
         width: 10%;
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+}
+article:hover i {
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 2; */
+    animation-name: rotate_Check;
+}
+
+@keyframes rotate_Check {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
 main a {
