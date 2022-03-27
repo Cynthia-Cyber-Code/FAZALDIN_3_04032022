@@ -33,6 +33,10 @@ main {
     border: none;
     padding: 0;
 }
+.intro button:hover, a button:hover {
+    opacity: 0.7;
+    box-shadow: 0 8px 16px black;
+}
 @media screen and (min-width: 992px) {
     header, main, footer {
         max-width: 1360px;

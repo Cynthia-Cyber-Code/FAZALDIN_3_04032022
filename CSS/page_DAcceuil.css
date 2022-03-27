@@ -102,7 +102,7 @@ input[type="text"]{
 button {
     border-radius: 20px;
     border: none;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .intro button {
     background: linear-gradient( #FF79DA,#9356DC);
@@ -179,7 +179,7 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 5px;
 }
 #Picture_1 {
@@ -326,6 +326,6 @@ input:checked + label > :last-child {
         max-width: 1340px;
     }
     .restaurant div {
-        max-width: 700px;
+        max-width: 500px;
     }
 }
