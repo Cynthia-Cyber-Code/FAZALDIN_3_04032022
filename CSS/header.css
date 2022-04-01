@@ -10,8 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
     max-width: 768px;
 }
 header img {
@@ -20,8 +18,8 @@ header img {
     max-width: 200px;
     padding: 15px;
 }
-main h3, h4 {
-    font-family: 'Shrikhand';
+body h3, h4 {
+    font-family: 'Roboto';
     font-weight: bold;
 }
 main p {
@@ -35,18 +33,20 @@ main {
 }
 .intro button:hover, a button:hover {
     opacity: 0.7;
-    box-shadow: 0 8px 16px black;
-}
-@media screen and (min-width: 992px) {
-    header, main, footer {
-        max-width: 1360px;
-        margin: auto;
-    }
-
+    box-shadow: 0 4px 8px black;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     header, main, footer {
         max-width: 992px;
+        margin: auto;
+    }
+    header img {
+        margin-right: 150px;
+    }
+}
+@media screen and (min-width: 992px) {
+    header, main, footer {
+        max-width: 1340px;
         margin: auto;
     }
 }
