@@ -125,22 +125,23 @@ button {
     max-width: 500px;
     padding: 15px 15px 50px 15px;
 }
-.running button {
+.running div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.048);
     width: 400px;
-    padding: 15px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
-.running button p{
-    width: 170px;
+.running div p{
+    width: 200px;
     margin: 0;
-    padding: 5px;
+    padding: 15px;
     font-weight: bold;
 }
-.running article {
+.running aside {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -149,7 +150,7 @@ button {
     margin: auto;
     max-width: 360px;
 }
-.running article span {
+.running aside span {
     display: flex;
     justify-content: center;
     border-radius: 200px;
@@ -165,10 +166,10 @@ button {
     color: gray;
 }
 
-.running article:hover i{
+.running aside:hover i{
     color: #9356DC;
 }
-.running article:hover button{
+.running aside:hover div{
     background-color: #9256dc3d;
 }
 
@@ -250,7 +251,7 @@ input[type="checkbox"] {
     color: gray;
     font-weight: lighter;
 }
-label:hover .fa-heart {
+div.zone:hover .fa-heart {
     display: block;
     border: none;
     animation-duration: 2s;
