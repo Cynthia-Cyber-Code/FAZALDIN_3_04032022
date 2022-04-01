@@ -250,7 +250,7 @@ input[type="checkbox"] {
     color: gray;
     font-weight: lighter;
 }
-span.no_click:hover .fa-heart {
+label:hover .fa-heart {
     display: block;
     border: none;
     animation-duration: 2s;
@@ -310,7 +310,7 @@ span.no_click:hover .fa-heart {
         justify-content: space-around;
         align-content: center;
     }
-    .fonctionnement {
+    .running {
         max-width: 1340px;
     }
     .card {
