@@ -6,6 +6,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/*Loading spinner*/
 .center {
     display: flex;
     justify-content: center;
@@ -27,6 +29,7 @@ a {
     height: 300px;
     width: 300px;
     stroke-linecap: round;
+    margin-top: 400px;
 }
 circle {
     fill: none;
@@ -62,13 +65,17 @@ circle {
         width: 0;
     }
 }
+
+/*Ombre header page d'acceuil*/
 header {
     box-shadow: 0 0 4px 0 black;
 }
+
+/* formulaire*/
 form {
     display: flex;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.26);
+    background-color: #eaeaea;
 }
 i {
     font-size: large;
@@ -79,7 +86,7 @@ form i {
 }
 input[type="text"]{
     border: none;
-    background-color: rgba(128, 128, 128, 0.021);
+    background-color: #eaeaea;
 }
 
 /*Exploration de menu*/
@@ -89,7 +96,7 @@ input[type="text"]{
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.048);
+    background-color: #f6f6f6;
     max-width: 700px;  /* block plus grand en media queries*/
     margin: auto;
 }
@@ -119,20 +126,20 @@ button {
 }
 
 /*Fonctionnement*/
-
 .running {
     margin: auto;
-    max-width: 500px;
+    max-width: 1340px;
     padding: 15px 15px 50px 15px;
 }
 .running div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.048);
-    width: 400px;
+    background-color: #f6f6f6;
+    width: 1340px;
     padding: 5px;
     border-radius: 20px;
+    z-index: -10;
 }
 
 .running div p{
@@ -148,7 +155,7 @@ button {
     align-items: center;
     padding: 10px;
     margin: auto;
-    max-width: 360px;
+    max-width: 1340px;
 }
 .running aside span {
     display: flex;
@@ -174,13 +181,20 @@ button {
 }
 
 /*Restaurants*/
-
 .restaurant {
-    background-color: rgba(128, 128, 128, 0.048);
+    background-color: #f6f6f6;
 }
 .restaurant div {
     margin: auto;
-    max-width: 350px;
+    max-width: 1340px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.restaurant h3 {
     padding: 15px;
 }
 .card {
@@ -189,6 +203,7 @@ button {
     border-radius: 15px;
     margin: 20px;
     padding: 5px;
+    width: 700px;
 }
 #Picture_1 {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -227,6 +242,7 @@ button {
     border-radius: 5px;
     padding: 5px;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 .card div, .card h4, .card p {
@@ -244,12 +260,12 @@ button {
     padding: 0;
     margin: 0;
 }
-input[type="checkbox"] {
-    display: none
-}
+
+/*Animation du coeur*/
 .no_click i {
     color: gray;
     font-weight: lighter;
+    font-size: large;
 }
 div.zone:hover .fa-heart {
     display: block;
@@ -284,34 +300,17 @@ div.zone:hover .fa-heart {
     .intro {
         max-width: 900px;
     }
-    .intro h3{
-        max-width: 1340px;
-    } 
-    .intro p {
-        max-width: 1340px;
-    }
     .restaurant div {
-        max-width: 500px;
+        justify-content: space-around;
+    }
+    .card {
+        width: 240px;
+        max-height: 700px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .intro, form {
-        max-width: 1340px;
-    }
-    .intro h3{
-        max-width: 1340px;
-    } 
-    .intro p {
-        max-width: 1340px;
-    }
-    .restaurant div {
-        max-width: 1340px;
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-    }
-    .running {
+    .intro, form, .intro h3, .intro p, .running {
         max-width: 1340px;
     }
     .card {

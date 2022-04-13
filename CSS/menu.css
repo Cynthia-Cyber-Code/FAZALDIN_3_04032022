@@ -3,6 +3,8 @@ nav i {
     color: grey;
     padding: 15px;
 }
+
+/*image du descriptif menu*/
 #img_Palette {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -21,7 +23,7 @@ main {
 }
 .card {
     box-shadow: 0 4px 8px 0 black;
-    background-color: rgb(231, 230, 230);
+    background-color: #f6f6f6;
     border-top-right-radius: 70px;
     border-top-left-radius: 70px;
     margin: auto;
@@ -35,19 +37,25 @@ main h4, main p {
     padding: 3px;
     margin: 0;
 }
+.card i{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*espacement nom et animation du coeur*/
 .name {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Shrikhand';
 }
-.card i{
-    padding: 0;
-    margin: 0;
-}
+
+/*animation du coeur*/
 .click_favoris i {
     color: gray;
     font-weight: lighter;
+    font-size: large;
 }
 
 .click_favoris:hover .fa-heart {
@@ -60,6 +68,7 @@ main h4, main p {
 .fa-heart {
     color: gray;
     overflow: hidden;
+    padding: 15px;
 }
 @keyframes slideHearth {
     from {
@@ -81,8 +90,8 @@ main h4, main p {
 }
 section.card div {
     margin: auto;
-    max-width: 500px;
-    align-items: center;
+    max-width: 750px;
+    /* align-items: center; */
 }
 
 /* entrée/plats/desserts */
@@ -116,22 +125,24 @@ article {
     border-radius: 12px;
     box-shadow: 0px 2px 4px black;
     overflow: hidden;
-    margin: 10px;
-    max-width: 360px;
+    margin: 15px;
+    max-width: 792px;
 }
 article div.aligment {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    max-width: 1340px;
 }
 .bolder {
     font-weight: bold;
     padding: 5px;
+    font-family: 'Roboto';
 }
 .spacing {
     padding: 5px;
-    width: 400px;
+    width: 700px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -191,6 +202,7 @@ article:hover i {
     align-items: center;
     margin: auto;
     max-width: 300px;
+    font-family: 'Roboto';
 }
 
 button {
@@ -212,6 +224,20 @@ button {
     
     header img, button {
         margin-right: 150px;
+    }
+    .spacing {
+        width: 900px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    article {
+        max-width: 1350px;
+    }
+    .spacing {
+        width: 700px;
     }
 
 }
