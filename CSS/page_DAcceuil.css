@@ -126,7 +126,49 @@ button {
 }
 
 /*Fonctionnement*/
+
 .running {
+    margin: auto;
+    max-width: 1340px;
+}
+.running h3 {
+    padding: 15px;
+}
+.arrangement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.running aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 700px;
+    margin: 15px;
+    background-color: #f6f6f6;
+}
+div.aligment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+}
+.running aside span {
+    display: flex;
+    justify-content: center;
+    border-radius: 200px;
+    align-items: center;
+    background-color: #9356DC;
+    color: white;
+    border: none;
+    font-size: small;
+    padding: 5px 8px;
+    margin-right: -8px;
+}
+
+/* .running {
     margin: auto;
     max-width: 1340px;
     padding: 15px 15px 50px 15px;
@@ -168,7 +210,7 @@ button {
     font-size: small;
     padding: 3px 6px;
     margin-right : -8px;
-}
+} */
 .running i {
     color: gray;
 }
@@ -176,7 +218,7 @@ button {
 .running aside:hover i{
     color: #9356DC;
 }
-.running aside:hover div{
+.running aside:hover {
     background-color: #9256dc3d;
 }
 
@@ -184,12 +226,9 @@ button {
 .restaurant {
     background-color: #f6f6f6;
 }
-.restaurant div {
-    margin: auto;
-    max-width: 1340px;
-    padding: 15px;
+.card_Position { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -197,77 +236,80 @@ button {
 .restaurant h3 {
     padding: 15px;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white;
-    border-radius: 15px;
-    margin: 20px;
-    padding: 5px;
-    width: 700px;
-}
 #Picture_1 {
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 177px, cover;
+    background-size: cover;
 }
 #Picture_2 {
     background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 177px, cover;
+    background-size: cover;
 }
 #Picture_3 {
     background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 180px, cover;
+    background-size: cover;
 }
 #Picture_4 {
     background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 180px, cover;
+    background-size: cover;
 }
-.picture_New {
-    width: 100%;
-    height: 150px;
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 20px;
+    width: 500px;
 }
 .picture {
     width: 100%;
-    height: 180px;
+    height: 170px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card .new {
-    border: none;
     float: right;
     color: green;
     background-color: #99E2D0;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0;
+    border-radius: 2px;
+    padding: 8px 10px;
+    margin: 10px;
     font-family: 'Roboto';
+    font-size: small;
+    font-weight: bold;
 }
 
-.card div, .card h4, .card p {
-    margin: 0;
+.card .line {
     display: flex;
     justify-content: space-between;
+    margin: 10px 10px 0;
 }
-.card h4{
-    padding: 3px 3px 1px 5px;
-}
-.card div, .card p {
-    padding: 1px 1px 3px 5px;
-}
-.card i{
+
+.line h4, .card i{
     padding: 0;
     margin: 0;
 }
+.card p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
 
 /*Animation du coeur*/
-.no_click i {
+.zone {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+.zone i {
     color: gray;
     font-weight: lighter;
     font-size: large;
 }
-div.zone:hover .fa-heart {
+span.zone:hover .fa-heart {
     display: block;
     border: none;
     animation-duration: 2s;
@@ -277,6 +319,7 @@ div.zone:hover .fa-heart {
 .fa-heart {
     color: gray;
     overflow: hidden;
+    height: 24px;
 }
 @keyframes slideHearth {
     from {
@@ -289,19 +332,17 @@ div.zone:hover .fa-heart {
     }
     to {
         width: 100%;
-        height: 20px;
+        height: 24px;
         font-weight: bold;
         background: linear-gradient(#9356DC, #FF79DA);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .intro {
         max-width: 900px;
-    }
-    .restaurant div {
-        justify-content: space-around;
     }
     .card {
         width: 240px;
@@ -312,6 +353,9 @@ div.zone:hover .fa-heart {
 @media screen and (min-width: 992px) {
     .intro, form, .intro h3, .intro p, .running {
         max-width: 1340px;
+    }
+    .running aside {
+        width: 360px;
     }
     .card {
         width: 240px;
