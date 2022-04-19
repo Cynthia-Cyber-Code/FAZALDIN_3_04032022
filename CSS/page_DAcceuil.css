@@ -87,6 +87,7 @@ form i {
 input[type="text"]{
     border: none;
     background-color: #eaeaea;
+    padding: 15px;
 }
 
 /*Exploration de menu*/
@@ -139,13 +140,24 @@ button {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.organization {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 5px;
+    /* width: 500px;
+     */
+}
 .running aside {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    width: 700px;
-    margin: 15px;
+    /* width: 360px; */
+    width: 300px;
+    /* margin: 15px; */
+    z-index: -50;
     background-color: #f6f6f6;
 }
 div.aligment {
@@ -153,72 +165,34 @@ div.aligment {
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    width: 250px;
+    max-width: 250px;
 }
-.running aside span {
+div.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 15px; */
+    margin-right: -10px;
+}
+.running span {
     display: flex;
     justify-content: center;
     border-radius: 200px;
     align-items: center;
     background-color: #9356DC;
     color: white;
-    border: none;
     font-size: small;
     padding: 5px 8px;
-    margin-right: -8px;
 }
-
-/* .running {
-    margin: auto;
-    max-width: 1340px;
-    padding: 15px 15px 50px 15px;
-}
-.running div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f6f6;
-    width: 1340px;
-    padding: 5px;
-    border-radius: 20px;
-    z-index: -10;
-}
-
-.running div p{
-    width: 200px;
-    margin: 0;
-    padding: 15px;
-    font-weight: bold;
-}
-.running aside {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 10px;
-    margin: auto;
-    max-width: 1340px;
-}
-.running aside span {
-    display: flex;
-    justify-content: center;
-    border-radius: 200px;
-    align-items: center;
-    background-color: #9356DC;
-    color: white;
-    border: none;
-    font-size: small;
-    padding: 3px 6px;
-    margin-right : -8px;
-} */
 .running i {
     color: gray;
+    padding-right: 15px;
 }
 
-.running aside:hover i{
+.running div.organization:hover i{
     color: #9356DC;
 }
-.running aside:hover {
+.running div.organization:hover aside {
     background-color: #9256dc3d;
 }
 
@@ -343,6 +317,9 @@ span.zone:hover .fa-heart {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .intro {
         max-width: 900px;
+    }
+    .running aside {
+        width: 700px;
     }
     .card {
         width: 240px;

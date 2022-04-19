@@ -130,7 +130,7 @@ article {
 }
 article div.aligment {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
     max-width: 1340px;
@@ -155,41 +155,41 @@ article div.aligment {
 }
 .comand i {
     color: white;
-    padding: 5px;
 }
 .comand {
     height: 70px;
     display : flex;
     align-items: center;
     justify-content: center;
-    width: 0 ;
+    width: 0px;
 }
 
 article:hover .comand {
     animation-duration: 5s;
     animation-fill-mode: forwards;
-    animation-name: slide_Check;
+    animation-name: slide_Check
 }
 
 @keyframes slide_Check {
     from {
+        background-color: #99E2D0;
         width: 0;
     }
 
-    to {
+    to { 
         background-color: #99E2D0;
         width: 100px;
     }
 }
 article:hover i {
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-name: rotate_Check;
 }
 
 @keyframes rotate_Check {
     from {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
 
     to {
